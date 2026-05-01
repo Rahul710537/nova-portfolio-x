@@ -12,8 +12,8 @@ const schema = z.object({
 });
 
 const socials = [
-  { icon: Github, href: "https://github.com/", color: "hover:text-foreground" },
-  { icon: Linkedin, href: "https://linkedin.com/in/rahul-b-071199340", color: "hover:text-blue-400" },
+  { icon: Github, href: "https://github.com/Rahul710537", color: "hover:text-foreground" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/rahul-b-071199340", color: "hover:text-blue-400" },
   { icon: Twitter, href: "#", color: "hover:text-sky-400" },
   { icon: Instagram, href: "#", color: "hover:text-pink-400" },
 ];
@@ -68,7 +68,7 @@ const Contact = () => {
               { icon: Mail, label: "Email", value: "rahulbalu330@gmail.com" },
               { icon: Phone, label: "Phone", value: "+91 9363571998" },
               { icon: MapPin, label: "Location", value: "Cuddalore, Tamil Nadu" },
-            ].map((c, i) => (
+            ].map((c) => (
               <motion.div
                 key={c.label}
                 whileHover={{ x: 5 }}
@@ -91,6 +91,8 @@ const Contact = () => {
                   <motion.a
                     key={i}
                     href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{ y: -4, scale: 1.15 }}
                     className={`p-3 rounded-lg glass ${s.color} text-muted-foreground transition`}
                   >

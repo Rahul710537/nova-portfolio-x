@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { Github, Code, Trophy, Award, Star, Zap } from "lucide-react";
 
 const profiles = [
-  { name: "GitHub", icon: Github, stat: "1.2k", label: "Stars", color: "text-foreground", glow: "from-foreground/20 to-foreground/5" },
-  { name: "LeetCode", icon: Code, stat: "850+", label: "Problems", color: "text-orange-400", glow: "from-orange-500/30 to-orange-500/5" },
-  { name: "HackerRank", icon: Trophy, stat: "5★", label: "Gold Badge", color: "text-emerald-400", glow: "from-emerald-500/30 to-emerald-500/5" },
-  { name: "CodeChef", icon: Award, stat: "1900", label: "Rating", color: "text-amber-400", glow: "from-amber-500/30 to-amber-500/5" },
-  { name: "Codeforces", icon: Zap, stat: "Expert", label: "Tier", color: "text-blue-400", glow: "from-blue-500/30 to-blue-500/5" },
-  { name: "GeeksforGeeks", icon: Star, stat: "Top 5%", label: "Coder", color: "text-green-400", glow: "from-green-500/30 to-green-500/5" },
+  { name: "GitHub", icon: Github, stat: "1.2k", label: "Stars", color: "text-foreground", glow: "from-foreground/20 to-foreground/5", href: "https://github.com/Rahul710537" },
+  { name: "LeetCode", icon: Code, stat: "850+", label: "Problems", color: "text-orange-400", glow: "from-orange-500/30 to-orange-500/5", href: "#" },
+  { name: "HackerRank", icon: Trophy, stat: "5★", label: "Gold Badge", color: "text-emerald-400", glow: "from-emerald-500/30 to-emerald-500/5", href: "#" },
+  { name: "CodeChef", icon: Award, stat: "1900", label: "Rating", color: "text-amber-400", glow: "from-amber-500/30 to-amber-500/5", href: "#" },
+  { name: "Codeforces", icon: Zap, stat: "Expert", label: "Tier", color: "text-blue-400", glow: "from-blue-500/30 to-blue-500/5", href: "#" },
+  { name: "GeeksforGeeks", icon: Star, stat: "Top 5%", label: "Coder", color: "text-green-400", glow: "from-green-500/30 to-green-500/5", href: "#" },
 ];
 
 const CodingProfiles = () => {
@@ -30,7 +30,9 @@ const CodingProfiles = () => {
           {profiles.map((p, i) => (
             <motion.a
               key={p.name}
-              href="#"
+              href={p.href}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}

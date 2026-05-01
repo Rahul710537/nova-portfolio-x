@@ -87,7 +87,8 @@ const Hero = () => {
               <Mail className="w-4 h-4" /> Contact Me
             </motion.a>
             <motion.a
-              href="#resume"
+              href="/resume.pdf"
+              download="Rahul_Balu_Resume.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-accent/40 text-accent hover:bg-accent/10 transition"

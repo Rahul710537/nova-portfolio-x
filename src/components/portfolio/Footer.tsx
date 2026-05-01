@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code2, Heart } from "lucide-react";
+import { Code2 } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -51,11 +51,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-border pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-muted-foreground">
+        <div className="border-t border-border pt-6 flex justify-center text-sm text-muted-foreground">
           <p>© 2026 Rahul Balu. All rights reserved.</p>
-          <p className="flex items-center gap-1.5">
-            Crafted with <Heart className="w-3.5 h-3.5 text-pink-400 fill-pink-400" /> using React + Three.js
-          </p>
         </div>
       </div>
     </footer>

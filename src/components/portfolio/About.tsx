@@ -29,10 +29,10 @@ const Counter = ({ value }: { value: number }) => {
 };
 
 const timeline = [
-  { year: "2027", title: "B.Tech in Information Technology", org: "Coimbatore Institute of Engineering and Technology", desc: "Pursuing B.Tech IT with a CGPA of 8.12 / 10. Expected graduation 2027." },
-  { year: "2024", title: "AI Book Summarization", org: "MSME Selected Project", desc: "Built an AI-powered book summarizer with Django + MySQL — selected by MSME for product-level development." },
-  { year: "2023", title: "Library Management System", org: "College Project", desc: "Full-stack MERN app to digitize college book inventory and track real-time stock." },
-  { year: "2022", title: "Higher Secondary (12th)", org: "Sathya Saai Matric Hr Sec School", desc: "Tamil Nadu State Board — scored 86%." },
+  { year: "2027", title: "B.Tech in Information Technology", org: "Coimbatore Institute of Engineering and Technology", desc: "Pursuing B.Tech IT with a CGPA of 8.12 / 10. Expected graduation 2027.", showYear: true },
+  { year: "2024", title: "AI Book Summarization", org: "MSME Selected Project", desc: "Built an AI-powered book summarizer with Django + MySQL — selected by MSME for product-level development.", showYear: true },
+  { year: "2023", title: "Library Management System", org: "College Project", desc: "Full-stack MERN app to digitize college book inventory and track real-time stock.", showYear: true },
+  { year: "2023", title: "Higher Secondary (12th)", org: "Sathya Saai Matric Hr Sec School", desc: "Tamil Nadu State Board — scored 86%.", showYear: false },
 ];
 
 const About = () => {
@@ -75,7 +75,7 @@ const About = () => {
               and exploring AI / NLP.
             </p>
             <div className="flex flex-wrap gap-2 pt-2">
-              {["Problem Solver", "Full Stack", "AI Enthusiast", "DSA Learner"].map((b) => (
+              {["Problem Solver", "Full Stack", "DSA Learner"].map((b) => (
                 <motion.span
                   key={b}
                   whileHover={{ scale: 1.1 }}
@@ -90,7 +90,7 @@ const About = () => {
           <div className="space-y-4">
             {timeline.map((t, i) => (
               <motion.div
-                key={t.year}
+                key={t.title}
                 initial={{ opacity: 0, x: 40 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -102,7 +102,7 @@ const About = () => {
                   {i < timeline.length - 1 && <div className="w-px flex-1 bg-border mt-2" />}
                 </div>
                 <div className="flex-1">
-                  <div className="text-xs font-mono text-accent">{t.year}</div>
+                  {t.showYear && <div className="text-xs font-mono text-accent">{t.year}</div>}
                   <div className="font-semibold">{t.title}</div>
                   <div className="text-sm text-primary">{t.org}</div>
                   <div className="text-sm text-muted-foreground mt-1">{t.desc}</div>

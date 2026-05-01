@@ -6,7 +6,6 @@ const categories = [
     color: "from-orange-400 to-red-500",
     skills: [
       { name: "Python", level: 90 },
-      { name: "Java", level: 75 },
       { name: "C", level: 80 },
     ],
   },
@@ -52,8 +51,6 @@ const categories = [
     color: "from-pink-400 to-rose-500",
     skills: [
       { name: "DSA (LeetCode)", level: 70 },
-      { name: "NLP", level: 65 },
-      { name: "Deep Learning", level: 60 },
     ],
   },
 ];
@@ -72,11 +69,8 @@ const Skills = () => {
         >
           <p className="text-sm font-mono text-accent mb-3">// 02. SKILLS</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            My <span className="text-gradient">Tech Arsenal</span>
+            My <span className="text-gradient">Skills</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            A diverse toolkit honed across years of building production-grade software.
-          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
