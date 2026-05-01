@@ -1,16 +1,37 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { lazy, Suspense } from "react";
+import Navbar from "@/components/portfolio/Navbar";
+import Hero from "@/components/portfolio/Hero";
+import About from "@/components/portfolio/About";
+import Skills from "@/components/portfolio/Skills";
+import Projects from "@/components/portfolio/Projects";
+import Resume from "@/components/portfolio/Resume";
+import Blog from "@/components/portfolio/Blog";
+import CodingProfiles from "@/components/portfolio/CodingProfiles";
+import Contact from "@/components/portfolio/Contact";
+import Footer from "@/components/portfolio/Footer";
+import Cursor from "@/components/portfolio/Cursor";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const ParticlesBackground = lazy(() => import("@/components/portfolio/ParticlesBackground"));
+
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <main className="relative min-h-screen">
+      <Suspense fallback={null}>
+        <ParticlesBackground />
+      </Suspense>
+      <Cursor />
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Resume />
+      <Blog />
+      <CodingProfiles />
+      <Contact />
+      <Footer />
+    </main>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
