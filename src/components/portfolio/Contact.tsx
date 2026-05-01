@@ -12,8 +12,8 @@ const schema = z.object({
 });
 
 const socials = [
-  { icon: Github, href: "#", color: "hover:text-foreground" },
-  { icon: Linkedin, href: "#", color: "hover:text-blue-400" },
+  { icon: Github, href: "https://github.com/", color: "hover:text-foreground" },
+  { icon: Linkedin, href: "https://linkedin.com/in/rahul-b-071199340", color: "hover:text-blue-400" },
   { icon: Twitter, href: "#", color: "hover:text-sky-400" },
   { icon: Instagram, href: "#", color: "hover:text-pink-400" },
 ];
@@ -65,9 +65,9 @@ const Contact = () => {
             className="lg:col-span-2 space-y-4"
           >
             {[
-              { icon: Mail, label: "Email", value: "alex@devportfolio.dev" },
-              { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
-              { icon: MapPin, label: "Location", value: "San Francisco, CA" },
+              { icon: Mail, label: "Email", value: "rahulbalu330@gmail.com" },
+              { icon: Phone, label: "Phone", value: "+91 9363571998" },
+              { icon: MapPin, label: "Location", value: "Cuddalore, Tamil Nadu" },
             ].map((c, i) => (
               <motion.div
                 key={c.label}

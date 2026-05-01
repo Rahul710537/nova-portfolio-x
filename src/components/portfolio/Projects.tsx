@@ -3,12 +3,14 @@ import { motion } from "framer-motion";
 const projects = [
   {
     title: "AI Book Summarization",
-    desc: "I developed a web application that allows users to upload PDF/documents, extract text content, generate concise summaries, and ask questions based on the uploaded document.",
+    desc: "Web app that accepts any book as input and generates a comprehensive AI-powered summary, exporting a downloadable multi-page PDF. Selected by MSME to be developed into a product-level application.",
+    stack: ["HTML", "CSS", "JavaScript", "Django", "MySQL"],
     gradient: "from-sky-500 via-blue-500 to-indigo-600",
   },
   {
     title: "Library Management System",
-    desc: "I also developed a Library Management System to digitally manage book inventory, monitor real-time stock availability, and improve library operations through efficient record management.",
+    desc: "Digital library system designed for the college to monitor real-time book stock, manage inventory and reduce manual effort. Full-stack MERN implementation with admin dashboard.",
+    stack: ["React.js", "Node.js", "Express.js", "MongoDB"],
     gradient: "from-emerald-500 via-teal-500 to-cyan-600",
   },
 ];
@@ -59,9 +61,16 @@ const Projects = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
               </div>
 
-              <div className="p-6 space-y-4">
+              <div className="p-6 space-y-4 max-w-md">
                 <h3 className="text-xl font-bold group-hover:text-gradient transition">{p.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
+                <div className="flex flex-wrap gap-2 pt-1">
+                  {p.stack.map((s) => (
+                    <span key={s} className="px-2.5 py-1 text-xs rounded-full glass border-primary/20 font-mono">
+                      {s}
+                    </span>
+                  ))}
+                </div>
               </div>
             </motion.div>
           ))}

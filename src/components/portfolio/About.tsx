@@ -3,10 +3,10 @@ import { useEffect, useRef, useState } from "react";
 import { Briefcase, GraduationCap, Rocket, Trophy } from "lucide-react";
 
 const stats = [
-  { label: "Projects Built", value: 48, icon: Rocket },
-  { label: "Years Experience", value: 5, icon: Briefcase },
-  { label: "Happy Clients", value: 32, icon: Trophy },
-  { label: "Certifications", value: 12, icon: GraduationCap },
+  { label: "Projects Built", value: 2, icon: Rocket },
+  { label: "CGPA", value: 8, icon: GraduationCap },
+  { label: "Certifications", value: 10, icon: Trophy },
+  { label: "12th Score %", value: 86, icon: Briefcase },
 ];
 
 const Counter = ({ value }: { value: number }) => {
@@ -29,10 +29,10 @@ const Counter = ({ value }: { value: number }) => {
 };
 
 const timeline = [
-  { year: "2024", title: "Senior Full Stack Engineer", org: "TechNova Labs", desc: "Leading development of AI-powered analytics platforms." },
-  { year: "2022", title: "Full Stack Developer", org: "PixelForge Studio", desc: "Built scalable web apps for Fortune 500 clients." },
-  { year: "2020", title: "Frontend Developer", org: "StartupHub", desc: "Crafted delightful UIs for early-stage startups." },
-  { year: "2019", title: "B.S. Computer Science", org: "MIT", desc: "Graduated with honors. Focus on AI & systems." },
+  { year: "2027", title: "B.Tech in Information Technology", org: "Coimbatore Institute of Engineering and Technology", desc: "Pursuing B.Tech IT with a CGPA of 8.12 / 10. Expected graduation 2027." },
+  { year: "2024", title: "AI Book Summarization", org: "MSME Selected Project", desc: "Built an AI-powered book summarizer with Django + MySQL — selected by MSME for product-level development." },
+  { year: "2023", title: "Library Management System", org: "College Project", desc: "Full-stack MERN app to digitize college book inventory and track real-time stock." },
+  { year: "2022", title: "Higher Secondary (12th)", org: "Sathya Saai Matric Hr Sec School", desc: "Tamil Nadu State Board — scored 86%." },
 ];
 
 const About = () => {
@@ -65,16 +65,17 @@ const About = () => {
           >
             <h3 className="text-2xl font-bold text-gradient-primary">Who I Am</h3>
             <p className="text-muted-foreground leading-relaxed">
-              I'm a software developer with a passion for blending engineering rigor with creative design.
-              For over 5 years, I've shipped products spanning web, mobile, and AI — always chasing that
-              perfect intersection of beautiful and functional.
+              I'm Rahul Balu, a motivated B.Tech Information Technology student at Coimbatore Institute of
+              Engineering and Technology, with hands-on experience building full-stack web applications using
+              Django, Python, React, and Node.js.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              When I'm not coding, you'll find me writing about tech, contributing to open source,
-              or experimenting with the latest in generative AI.
+              I love turning real problems into clean, working software — from an AI Book Summarizer selected
+              by MSME, to a Library Management System for my college. Currently sharpening DSA on LeetCode
+              and exploring AI / NLP.
             </p>
             <div className="flex flex-wrap gap-2 pt-2">
-              {["Problem Solver", "Open Source", "AI Enthusiast", "Mentor"].map((b) => (
+              {["Problem Solver", "Full Stack", "AI Enthusiast", "DSA Learner"].map((b) => (
                 <motion.span
                   key={b}
                   whileHover={{ scale: 1.1 }}

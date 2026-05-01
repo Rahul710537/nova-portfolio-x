@@ -2,58 +2,58 @@ import { motion } from "framer-motion";
 
 const categories = [
   {
-    title: "Frontend",
-    color: "from-cyan-400 to-blue-500",
+    title: "Programming Languages",
+    color: "from-orange-400 to-red-500",
     skills: [
-      { name: "React", level: 95 },
-      { name: "JavaScript", level: 92 },
-      { name: "Tailwind", level: 90 },
-      { name: "HTML / CSS", level: 95 },
+      { name: "Python", level: 90 },
+      { name: "Java", level: 75 },
+      { name: "C", level: 80 },
     ],
   },
   {
-    title: "Backend",
+    title: "Frontend",
+    color: "from-cyan-400 to-blue-500",
+    skills: [
+      { name: "HTML", level: 95 },
+      { name: "CSS", level: 90 },
+      { name: "JavaScript", level: 88 },
+      { name: "React", level: 85 },
+    ],
+  },
+  {
+    title: "Backend Frameworks",
     color: "from-purple-400 to-pink-500",
     skills: [
-      { name: "Node.js", level: 88 },
-      { name: "Express", level: 85 },
-      { name: "Django", level: 78 },
+      { name: "Django", level: 88 },
+      { name: "Node.js", level: 80 },
+      { name: "Express.js", level: 78 },
     ],
   },
   {
     title: "Database",
     color: "from-emerald-400 to-cyan-500",
     skills: [
-      { name: "MongoDB", level: 85 },
-      { name: "MySQL", level: 80 },
-      { name: "PostgreSQL", level: 82 },
+      { name: "MySQL", level: 85 },
+      { name: "MongoDB", level: 80 },
     ],
   },
   {
-    title: "Programming",
-    color: "from-orange-400 to-red-500",
-    skills: [
-      { name: "Python", level: 90 },
-      { name: "Java", level: 75 },
-      { name: "TypeScript", level: 92 },
-    ],
-  },
-  {
-    title: "Tools",
+    title: "Tools & Platforms",
     color: "from-violet-400 to-indigo-500",
     skills: [
-      { name: "Git / GitHub", level: 95 },
-      { name: "Docker", level: 80 },
-      { name: "VS Code", level: 98 },
+      { name: "VS Code", level: 95 },
+      { name: "Git / GitHub", level: 88 },
+      { name: "Jupyter Notebook", level: 82 },
+      { name: "Docker Desktop", level: 70 },
     ],
   },
   {
-    title: "Other",
+    title: "Learning",
     color: "from-pink-400 to-rose-500",
     skills: [
-      { name: "Three.js", level: 78 },
-      { name: "Framer Motion", level: 88 },
-      { name: "Figma", level: 82 },
+      { name: "DSA (LeetCode)", level: 70 },
+      { name: "NLP", level: 65 },
+      { name: "Deep Learning", level: 60 },
     ],
   },
 ];
