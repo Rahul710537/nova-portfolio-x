@@ -45,16 +45,13 @@ const Resume = () => {
             </div>
           </motion.div>
 
-          <div className="space-y-5 relative z-10">
-            <h3 className="text-3xl font-bold">Alex Carter — Resume</h3>
+          <div className="space-y-5 relative z-10 text-center">
+            <h3 className="text-3xl font-bold">Resume</h3>
             <p className="text-muted-foreground leading-relaxed">
-              5+ years of experience designing and shipping production software.
-              Download a complete overview of my work, skills and education.
             </p>
-            <div className="flex gap-3 text-xs font-mono text-muted-foreground">
-              <span>PDF · 2 pages</span>
-              <span>•</span>
-              <span>Updated Apr 2026</span>
+            <div className="flex gap-3 text-xs font-mono text-muted-foreground justify-center">
+              <span>PDF. 1page</span>
+              <span></span>
             </div>
             <motion.a
               href="#"

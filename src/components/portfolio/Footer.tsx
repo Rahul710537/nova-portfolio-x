@@ -38,7 +38,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-3">Quick Links</h4>
             <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
-              {["About", "Skills", "Projects", "Blog", "Resume", "Contact"].map((l) => (
+              {["About", "Skills", "Projects", "Resume", "Contact"].map((l) => (
                 <a key={l} href={`#${l.toLowerCase()}`} className="hover:text-primary transition">{l}</a>
               ))}
             </div>
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-muted-foreground">
-          <p>© 2026 Alex Carter. All rights reserved.</p>
+          <p>© 2026 Rahul. All rights reserved.</p>
           <p className="flex items-center gap-1.5">
             Crafted with <Heart className="w-3.5 h-3.5 text-pink-400 fill-pink-400" /> using React + Three.js
           </p>

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, Download, Mail, Sparkles } from "lucide-react";
 import Hero3D from "./Hero3D";
 
-const roles = ["Full Stack Developer", "Software Engineer", "UI/UX Enthusiast", "AI Developer"];
+const roles = ["Full Stack Developer", "Software Engineer"];
 
 const Hero = () => {
   const [text, setText] = useState("");
@@ -54,7 +54,7 @@ const Hero = () => {
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
             <span className="block text-foreground">Hi, I'm</span>
-            <span className="block text-gradient animate-gradient">Alex Carter</span>
+            <span className="block text-gradient animate-gradient">Rahul</span>
           </h1>
 
           <div className="text-2xl md:text-3xl font-mono h-10 flex items-center">
