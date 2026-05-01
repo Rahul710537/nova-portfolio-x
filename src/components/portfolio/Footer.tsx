@@ -30,7 +30,7 @@ const Footer = () => {
               <div className="p-2 rounded-lg bg-gradient-to-br from-primary to-secondary glow-primary">
                 <Code2 className="w-5 h-5 text-background" />
               </div>
-              <span className="font-bold text-gradient">DevPortfolio</span>
+              <span className="font-bold text-gradient">Rahul Balu</span>
             </a>
             <p className="text-sm text-muted-foreground">Building delightful software, one line at a time.</p>
           </div>
@@ -47,12 +47,12 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-3">Stay Connected</h4>
             <p className="text-sm text-muted-foreground mb-3">Open to opportunities and collaborations.</p>
-            <a href="#contact" className="text-sm text-primary hover:underline">alex@devportfolio.dev</a>
+            <a href="mailto:rahulbalu330@gmail.com" className="text-sm text-primary hover:underline">rahulbalu330@gmail.com</a>
           </div>
         </div>
 
         <div className="border-t border-border pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-muted-foreground">
-          <p>© 2026 Rahul. All rights reserved.</p>
+          <p>© 2026 Rahul Balu. All rights reserved.</p>
           <p className="flex items-center gap-1.5">
             Crafted with <Heart className="w-3.5 h-3.5 text-pink-400 fill-pink-400" /> using React + Three.js
           </p>

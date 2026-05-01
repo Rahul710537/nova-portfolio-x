@@ -1,17 +1,21 @@
-import { useCallback } from "react";
-import Particles from "@tsparticles/react";
+import { useEffect, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import type { Engine } from "@tsparticles/engine";
 
 const ParticlesBackground = () => {
-  const init = useCallback(async (engine: Engine) => {
-    await loadSlim(engine);
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => setReady(true));
   }, []);
+
+  if (!ready) return null;
 
   return (
     <Particles
       id="tsparticles"
-      init={init}
       className="fixed inset-0 -z-10"
       options={{
         fpsLimit: 60,
@@ -19,7 +23,7 @@ const ParticlesBackground = () => {
         interactivity: {
           events: {
             onHover: { enable: true, mode: "grab" },
-            resize: true,
+            resize: { enable: true },
           },
           modes: {
             grab: { distance: 140, links: { opacity: 0.5 } },
@@ -39,7 +43,7 @@ const ParticlesBackground = () => {
             speed: 0.6,
             outModes: { default: "bounce" },
           },
-          number: { density: { enable: true, area: 900 }, value: 60 },
+          number: { density: { enable: true }, value: 60 },
           opacity: { value: 0.4 },
           shape: { type: "circle" },
           size: { value: { min: 1, max: 3 } },

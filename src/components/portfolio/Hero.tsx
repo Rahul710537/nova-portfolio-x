@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, Download, Mail, Sparkles } from "lucide-react";
 import Hero3D from "./Hero3D";
 
-const roles = ["Full Stack Developer", "Software Engineer"];
+const roles = ["Full Stack Developer", "Application Developer", "Django + React Developer", "B.Tech IT Student"];
 
 const Hero = () => {
   const [text, setText] = useState("");
@@ -54,7 +54,7 @@ const Hero = () => {
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
             <span className="block text-foreground">Hi, I'm</span>
-            <span className="block text-gradient animate-gradient">Rahul</span>
+            <span className="block text-gradient animate-gradient">Rahul Balu</span>
           </h1>
 
           <div className="text-2xl md:text-3xl font-mono h-10 flex items-center">
@@ -64,8 +64,8 @@ const Hero = () => {
           </div>
 
           <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-            I craft immersive digital experiences blending elegant design with powerful engineering.
-            Passionate about building scalable products that delight users and push boundaries.
+            B.Tech IT student building full-stack web apps with Django, Python, React, Node.js & MongoDB.
+            Eager to contribute to dynamic teams and grow as a software developer.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2">

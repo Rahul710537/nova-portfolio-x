@@ -54,7 +54,8 @@ const Resume = () => {
               <span></span>
             </div>
             <motion.a
-              href="#"
+              href="/Rahul_Balu_Resume.pdf"
+              download="Rahul_Balu_Resume.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-background font-semibold glow-primary"
